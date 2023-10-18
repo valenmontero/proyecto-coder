@@ -50,14 +50,14 @@
 
     <main>
 
-        <section>
+        <section class="portada">
 
-            <div>
-                <h1>¡Tenemos una experiencia única esperándote dentro del país!</h1>
+            <div class="portada-texto">
+                <h1 class="portada-titulo">¡Tenemos una experiencia única esperándote dentro del país!</h1>
 
-                <form action="">
+                <form class="portada-form" action="">
 
-                    <div>
+                    <div class="content-form">
                     <label for="campo-destino">Destino</label>
                     <select name="" id="campo-destino">
                         <option value="">Elegir</option>
@@ -65,10 +65,14 @@
                         <option value="">Cataratas del Iguazú</option>
                         <option value="">El Calafate</option>
                         <option value="">San Rafael</option>
+                        <option value="">Salta</option>
+                        <option value="">Usuhaia</option>
+                        <option value="">Los Andes</option>
+                        <option value="">San Rafael</option>
                     </select>
                     </div>
 
-                    <div>
+                    <div class="content-form">
                     <label for="campo-mes">Mes de viaje</label>
                     <select name="" id="campo-mes">
                         <option value="">Elegir</option>
@@ -87,7 +91,7 @@
                     </select>
                     </div>
 
-                    <div>
+                    <div class="content-form">
                         <label for="campo-personas">Personas</label>
                         <select name="" id="campo-personas">
                             <option value="">Elegir</option>
@@ -102,74 +106,94 @@
                         </select>
                         </div>
 
-                    <div>
+                    <div class="form-boton">
                         <input type="submit" value="Buscar">
                     </div>
 
                 </form>
-
             </div>
 
         </section>
 
-        <section>
+        <section class="cards-grup">
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+        <div class="cont-cards">
+            <article class="cards">
+                <img src="../img/salta.jpg" width="200" alt="salta">
+                <div class="cards-body">
+                    <h3>Salta</h3>
+                    <span>$183.900</span>
+                    <p>Feb 18-23 · 5 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+
+            <article class="cards">
+                <img src="../img/bariloche.jpg" width="200" alt="bariloche">
+                <div class="cards-body">
+                    <h3>Bariloche</h3>
+                    <span>$134.900</span>
+                    <p>Oct 24-29 · 5 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+            <article class="cards">
+                <img src="../img/cataratas.jpg" width="200" alt="cataratas">
+                <div class="cards-body">
+                    <h3>Iguazú</h3>
+                    <span>$171.900</span>
+                    <p>Nov 01-07 · 6 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+                <article class="cards">
+                    <img src="../img/calafate.jpg" width="200" alt="calafate">
+                    <div class="cards-body">
+                        <h3>El Calafate</h3>
+                        <span>$149.900</span>
+                        <p>Nov 24-30 · 6 noches</p>
+                    </div>
+                </article>
+        </div>
+
+        <div class="cont-cards">
+            <article class="cards">
+                <img src="../img/san-rafael.jpg" width="200" alt="san-rafael">
+                <div class="cards-body">
+                    <h3>San Rafael</h3>
+                    <span>$89.900</span>
+                    <p>Nov 16-20 · 4 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+            <article class="cards">
+                <img src="../img/faro.jpg" width="200" alt="ushuaia">
+                <div class="cards-body">
+                    <h3>Ushuaia</h3>
+                    <span>$264.900</span>
+                    <p>Nov 24-28 · 4 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+            <article class="cards">
+                <img src="../img/andes.jpg" width="200" alt="andes">
+                <div class="cards-body">
+                    <h3>Los Andes</h3>
+                    <span>$114.900</span>
+                    <p>Dic 08-13 · 5 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
+            <article class="cards">
+                <img src="../img/salinas.jpg" width="200" alt="salinas">
+                <div class="cards-body">
+                    <h3>Jujuy</h3>
+                    <span>$122.165</span>
+                    <p>Nov 09-14 · 5 noches</p>
+                </div>
             </article>
 
-            <article>
-                <img src="" alt="">
-                <h3>Titulo</h3>
-                <span>$100.000</span>
-                <p>Oct 23-30 · 5 noches</p>
-            </article>
-
+        </div>
         </section>
 
 
@@ -177,18 +201,30 @@
 
     <footer>
 
-        <div>
-            <h4>Nombre de la marca</h4>
-            <p>Lorem ipsum dolor sit amet consectetur. Integer est et facilisis pulvinar adipiscing elementum eget </p>
+        <div class="container"> 
+
+            <div class="info-footer">
+                <h4>Cloud Travel</h4>
+                <p>Somos una empresa de viajes con más de 20 años de trayectoria comercial en turismo. </p>
+            </div>
+    
+            <div class="contacto-footer">
+                <h4>Contacto</h4>
+                <p>+54 9 11 1111 1111</p>
+                <p>usuario@correo.com</p>
+                <p>Calle 1, Buenos Aires</p>
+            </div>
+    
+            <div class="redes-footer">
+                <h4>Nuestras redes</h4>
+                <ul>
+                    <li><a href=""> <i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href=""> <i class="bi bi-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+    
         </div>
 
-        <div>
-            <h4>Contacto</h4>
-        </div>
-
-        <div>
-            <h4>En Instagram</h4>
-        </div>
     </footer>
 
 </body>
