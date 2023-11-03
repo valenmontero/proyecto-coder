@@ -7,49 +7,70 @@
 
 /* --- PORTADA INDEX --- */
 
-.portada img{
+.portada-index img{
     max-width: 100%;
 }
 
-.portada{
-    padding: 1rem;
+.portada-index{
+    padding: 2rem;
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
 }
 
 h1{
     font-weight: 600;
     color: #F55759;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
 }
 
 .portada-texto{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    padding-top: 1rem;
+    gap: 3rem;
 }
 
 
-/* --- Form --- */
+/* --- Form Index --- */
+.tamano-form{
+    width: 250px;
+}
+
 .portada-form{
     background-color: #ffffff;
     box-shadow: 4px 4px 50px #00000031;
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 320px;
     padding: 1rem;
     margin: center;
-    border-radius: 25px;
+    border-radius: 50px;
 }
 
 .portada-form div{
     background-color: #ffffff;
+    align-content: center;
+    align-content: center;
     padding: 1rem;
 }
 
 .portada-form label{
     background-color: #ffffff;
 }
+
+.form-boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .form-boton input{
     background-color: #F6B52F;
@@ -60,7 +81,13 @@ h1{
 }
 
 @media (min-width: 768px){
-    .portada{
+    .portada-form{
+        width: 350px;
+        flex-direction: column;
+    }
+
+
+    .portada-index{
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -69,7 +96,7 @@ h1{
     .portada-texto{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
     }
     
     .portada img{
@@ -77,24 +104,30 @@ h1{
         flex-direction: column;
         justify-content: center;
     }
+
+    h1{
+        font-size: 1.8rem;
+    }
 }
 
 
-
 @media (min-width: 1200px){
+
     .portada-form{
         background-color: #ffffff;
         box-shadow: 4px 4px 50px #00000031;
-        width: 850px;
+        flex-direction: row;
+        width: 770px;
         padding: 1rem;
         margin: center;
         border-radius: 50px;
+    }
 
+    .tamano-form{
+        width: 180px;
     }
 
     .portada-form div{
-        background-color: #ffffff;
-        padding: 10px;
         background-color: #ffffff;
         padding: 10px;
         display: inline-block;
@@ -106,7 +139,41 @@ h1{
 }
     
 
-/* --- CARDS INDEX --- */
+/* --- Form Nac e Inter --- */
+    .portada{
+        padding: 2rem;
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    @media (min-width: 768px){
+        .portada section{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+        }
+
+        .portada div select{
+            width: 150px;
+        }
+    }
+
+
+    @media (min-width: 1200px){
+        .portada section{
+            width: 770px;
+        }
+
+        .portada div select{
+            width: 180px;
+        }
+    }
+
+
+/* --- CARDS --- */
 
 /* --- Cards --- */
 
