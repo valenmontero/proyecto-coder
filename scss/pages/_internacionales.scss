@@ -1,0 +1,30 @@
+.portada {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    @include flex-column;
+    gap: 3rem;
+
+    @include mq-md{
+            section {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 700px;
+                }
+    
+            div select {
+                    width: 150px;
+                }
+        }
+
+    @include mq-lg{
+    section {
+        width: 770px;
+    }
+
+    div select {
+        width: 180px;
+    }}
+    }
+
+

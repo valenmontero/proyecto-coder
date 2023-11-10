@@ -1,0 +1,41 @@
+.tamano-form {
+    width: 250px;
+    }
+
+.portada-form {
+    background-color: $color-blanco;
+    box-shadow: $sombra-form;
+    @include flex-column;
+    align-content: center;
+    justify-content: center;
+    width: 320px;
+    padding: 1rem;
+    margin: center;
+    border-radius: 50px;
+
+        div {
+            background-color: $color-blanco;
+            align-content: center;
+            align-content: center;
+            padding: 1rem;
+        }
+
+        label {
+            background-color: $color-blanco;
+        }
+}
+
+.form-boton {
+    @include flex-column;
+    justify-content: center;
+    align-content: center;
+
+    input {
+        background-color: $color-secundario;
+        color: #FAFAFA;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        }
+}
+

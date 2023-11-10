@@ -1,0 +1,60 @@
+.portada-nosotros {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    @include flex-column;
+    gap: 2rem;
+    }
+
+    .equipo {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    @include flex-column;
+    gap: 2rem;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+    
+        article {
+            @include flex-column;
+            gap: 1rem;
+        }
+    }
+
+
+@include mq-md{
+    .equipo-empleados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+@include mq-lg {
+    .portada-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .nosotros-texto {
+        gap: 2rem;
+
+        h1 {
+            padding-bottom: 1.2rem;
+        }
+    }
+
+    .equipo-empleados {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
+
+        img {
+            height: 300px;
+        }
+        }
+}

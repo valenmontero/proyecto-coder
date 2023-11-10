@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+
+img{
+    max-width: 100%;
+}
+
+$color-primario: #F55759;
+$color-secundario: #F6B52F;
+$color-gris:#31353E;
+$color-blanco:#ffffff;
+$color-texto: #5B5E65;
+$sombra-form: 4px 4px 50px #00000031;
+
+@mixin mq-md{
+    @media(min-width: 768px){
+        @content;
+    }
+}
+
+@mixin mq-lg{
+    @media(min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin flex-column(){
+    display: flex;
+    flex-direction: column;
+}

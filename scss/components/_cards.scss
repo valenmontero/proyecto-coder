@@ -1,0 +1,69 @@
+.cards {
+    border: 3px solid #CCCCCC;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 17px;
+        height: 196px;
+        }
+
+    h3 {
+        color: $color-gris;
+        font-size: x-large;
+        font-weight: 600;
+        }
+
+    span {
+        color: $color-primario;
+        font-size: large;
+        font-weight: 600;
+        }
+
+    p {
+        color: $color-texto;
+        font-size: medium;
+        font-weight: 400;
+        }
+
+    &-body {
+        @include flex-column;
+        align-items: left;
+        gap: 5px;
+        padding: 25px;
+        }
+
+    &-grup {
+        padding: 1rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        @include flex-column;
+        gap: 2rem;
+        margin: 1rem;
+        }
+    }
+
+.cont-cards {
+    @include flex-column;
+    align-items: center;
+    gap: 3rem;
+
+    @include mq-md{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 3rem;
+    }
+
+    @include mq-lg{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    }
+}
+
+
