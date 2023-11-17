@@ -3,6 +3,7 @@
     width: 300px;
     border-radius: 20px;
     overflow: hidden;
+    transition: 1s;
 
     img {
         width: 100%;
@@ -43,7 +44,11 @@
         gap: 2rem;
         margin: 1rem;
         }
+
+    &:hover{
+        transform: scale(1.1,1.1);
     }
+}
 
 .cont-cards {
     @include flex-column;

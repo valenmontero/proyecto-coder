@@ -37,6 +37,13 @@
         padding: 10px 20px;
         border-radius: 30px;
         border: none;
+        transition: 1s;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+            background-color: #FFC54E;
         }
+        }
+    
 }
 

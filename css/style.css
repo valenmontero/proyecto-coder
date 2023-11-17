@@ -14,6 +14,7 @@ img {
   width: 300px;
   border-radius: 20px;
   overflow: hidden;
+  transition: 1s;
 }
 .cards img {
   width: 100%;
@@ -50,6 +51,9 @@ img {
   flex-direction: column;
   gap: 2rem;
   margin: 1rem;
+}
+.cards:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .cont-cards {
@@ -156,6 +160,11 @@ footer p {
   padding: 10px 20px;
   border-radius: 30px;
   border: none;
+  transition: 1s;
+}
+.form-boton input:hover {
+  transform: scale(1.1, 1.1);
+  background-color: #FFC54E;
 }
 
 .portada-index {
